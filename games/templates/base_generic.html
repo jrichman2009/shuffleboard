@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	{% block title %}<title>LiveRamp NY Shuffleboard</title>{% endblock %}
+	<meta charset='utf-8'>
+</head>
+<body>
+	<h1>LiveRamp NYC Shuffleboard Standings</h1>
+	<ul class ='sidebar-nav'>
+		
+		<li><a href="{% url 'players' %}">View Players</a></li>
+		<li><a href="{% url 'games' %}">Games</a></li>
+		<li><a href="{% url 'register' %}">Register Game</a></li>
+		<li><a href="{% url 'new_player' %}">New Player</a></li>
+	</ul>
+
+{% block content %}{% endblock %}
